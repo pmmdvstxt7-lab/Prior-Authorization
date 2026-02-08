@@ -331,34 +331,41 @@ h2{
   .grid-2{grid-template-columns: 1fr}
   .grid-3{grid-template-columns: 1fr}
 }
-/* DARK, CENTERED FOOTER */
-.footer.footer-dark{
-  background:#0b1220;
-  border-top:1px solid rgba(255,255,255,.10);
+/* LIGHT FOOTER (Option A) */
+.footer.footer-dark{ /* keep class name so HTML stays the same */
+  background:#f7f8fb;
+  border-top:1px solid #e7e9f2;
   padding:34px 0;
 }
 
-.foot.foot-center{
-  justify-content:center;
-  text-align:center;
-  align-items:center;
-  flex-direction:column;
-  gap:10px;
-}
-
-.footer.footer-dark .foot-name{
-  color:#ffffff;
+.footer.footer-dark .footer-name{
+  color:#0f172a;
   font-weight:900;
-  margin:0;
 }
 
-.footer.footer-dark .foot-meta{
-  color:rgba(255,255,255,.75);
-  margin:4px 0 0;
+.footer.footer-dark .footer-line{
+  color:#475569;
+  font-weight:700;
 }
 
-.footer.footer-dark .foot-copy{
-  color:rgba(255,255,255,.60);
-  margin:12px 0 0;
+.footer.footer-dark .footer-links{
+  color:#64748b;
+  font-weight:800;
+}
+
+.footer.footer-dark .footer-links a{
+  color:#2563eb;
+  text-decoration:none;
+}
+.footer.footer-dark .footer-links a:hover{
+  text-decoration:underline;
+}
+
+.footer.footer-dark .sep{
+  color:#94a3b8;
+}
+
+.footer.footer-dark .footer-copy{
+  color:#64748b;
   font-weight:700;
 }
